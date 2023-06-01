@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/mainStyle.css"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+</head>
+
+<body>
+  <button id="scrollTop" class="scrollTop" type="button" onclick="topFunction()"><img class="scrolltop" src="./assets/images/scroll-to-top-icon.svg"></img></button>
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("scrollTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+
+</html>
