@@ -124,14 +124,14 @@ div.cardsection {
 /* Desktop view */
 @media (min-width: 500px) {
   div.twocolumncardholder {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     min-width: 0%;
     max-width: 100%;
     width: 85vw;
   }
 
   div.threecolumncardholder {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     min-width: 0%;
     max-width: 100%;
     width: 85vw;
@@ -158,7 +158,7 @@ div.cardsection {
 
   div.card {
     margin: 0px 1em 0px 1em;
-    width: auto;
+    width: 90vw;
     height: auto;
   }
 
@@ -263,7 +263,7 @@ div.backbutton {
   width: 100%;
 }
 
-button {
+input[type=button] {
   text-align: center;
   border: 2px hidden black;
   border-radius: 15px;
@@ -277,7 +277,7 @@ button {
   transition: 0.2s;
 }
 
-button.uniformsize {
+input[type=button].uniformsize {
   width: 8em;
 }
 
@@ -364,6 +364,12 @@ a:hover {
 a:hover.clickableimage {
   opacity: 1.0;
   text-decoration: none;
+}
+
+a.button {
+  overflow: hidden;
+  width: auto;
+  display: inline-block
 }
 
 /* ---------- Images ---------- */
@@ -453,16 +459,15 @@ div.gallery {
 
   a:visited {
     color: black;
-  }
+  } 
 
   /* Buttons */
-  button {
-    background-color: #aadddd;
-    color: #0e2323;
+  input[type=button] {
+    background-color: #aacbdd;
   }
 
-  button:hover {
-    background-color: #57bcbc;
+  input[type=button]:hover {
+    background-color: #579abc;
     color: white;
     box-shadow: 0px 0px 3px lightgrey;
   }
@@ -568,12 +573,12 @@ div.gallery {
   }
 
   /* Buttons */
-  button {
+  input[type=button] {
     background-color: #1c4646;
     color: #aadddd;
   }
 
-  button:hover {
+  input[type=button]:hover {
     background-color: white;
     color: black;
   }

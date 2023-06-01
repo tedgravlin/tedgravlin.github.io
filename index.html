@@ -1,1 +1,76 @@
-<p> Hello there </p>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Created by Ted Gravlin -->
+
+<head>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <!-- Scale page to display width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Header -->
+    <div class="header">
+        <a class="clickableimage" target="_top" href="./index.html">
+            <img class="headerlogo" src="./assets/images/picture-of-me.jpg" alt=""
+                style="width:100px; height:100px;">
+        </a>
+        <h1 class="headertitle">Ted Gravlin</h1>
+        <p class="header">Personal website</p>
+    </div>
+    <!-- Load in scroll top button -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            var scrolltop = $("#scrolltop");
+            scrolltop.load("scrolltotop.html")
+        });
+    </script>
+    <!-- Page title and favicons -->
+    <title> Ted Gravlin </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#33cdc6">
+    <meta name="apple-mobile-web-app-title" content="Project Penguin">
+    <meta name="application-name" content="Project Penguin">
+    <meta name="msapplication-TileColor" content="#33cdc6">
+</head>
+
+<body>
+    <div id="scrolltop"></div>
+    <div class="twocolumncardholder">
+        <div class="card">
+            <img class="cardicon" src="./assets/images/man-at-computer-emoji.svg">
+            <br>
+            <h3> About Me </h3>
+            <p> Hi there! I'm Ted Gravlin.</p>
+            <p>I am currently a Computer Science student at Eastern Michigan University.</p>
+        </div>
+        <div class="card">
+            <img class="cardicon" src="./assets/images/webglobe-emoji.svg">
+            <br>
+            <h3> Links </h3>
+            <a class="button" href="https://www.linkedin.com/in/theodore-gravlin/">
+                <input class="uniformsize" type="button" value="LinkedIn">
+            </a>
+            <a class="button" href="https://github.com/tedgravlin">
+                <input class="uniformsize" type="button" value="GitHub">
+            </a>
+            <br>
+            <a class="button" href="mailto:theodoregravlin@pm.me">
+                <input class="uniformsize" type="button" value="Email">
+            </a>
+            <a class="button" href="https://signal.me/#p/+13136765972">
+                <input class="uniformsize" type="button" value="Signal">
+            </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <a href="https://github.com/tedgravlin" style="font-weight: normal;"> Made with ❤️ by
+            Ted Gravlin </a>
+    </div>
+</body>
+
+</html>
