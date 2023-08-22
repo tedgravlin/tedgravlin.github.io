@@ -257,57 +257,6 @@ input[type=button].uniformsize {
   width: 8em;
 }
 
-button.scrollTop {
-  display: none;
-  position: fixed;
-  right: 5%;
-  bottom: 0;
-  text-align: center;
-  font-weight: normal;
-  font-size: 2em;
-  width: 80px;
-  height: 80px;
-  opacity: 0%;
-  border: 4px solid black;
-  border-radius: 50%;
-  margin: 5px 1px 5px 1px;
-  padding: 15px 10px 0px 10px;
-  cursor: pointer;
-  backface-visibility: hidden;
-  animation-name: sizein;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes sizein {
-  0% {
-    transform: scale3d(0, 0, 0);
-  }
-
-  50% {
-    opacity: 100%;
-  }
-
-  100% {
-    transform: scale3d(0.75, 0.75, 0.75);
-    opacity: 100%;
-  }
-}
-
-/* Desktop view */
-@media (min-width: 500px) {
-  button.scrollTop {
-    display: none;
-  }
-}
-
-/* Mobile view */
-@media (max-width: 500px) {
-  button.scrollTop {
-    display: none;
-  }
-}
-
 /* ---------- Dividers ---------- */
 hr.cardheader {
   width: 2.5em;
@@ -347,12 +296,6 @@ a:hover.noshow {
 }
 
 /* ---------- Images ---------- */
-img.scrolltop {
-  width: 45px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
 img.cardheader {
   width: 100%;
   border-radius: 16px;
@@ -427,11 +370,6 @@ img.cardheader {
 
   button.back:hover {
     background-color: lightblue;
-    color: black;
-  }
-
-  button.scrollTop {
-    background-color: white;
     color: black;
   }
 
@@ -514,16 +452,6 @@ img.cardheader {
   button.back:hover {
     background-color: lightblue;
     color: black;
-  }
-
-  button.scrollTop {
-    background-color: #222;
-    color: white;
-    border: 4px solid #333;
-  }
-
-  img.scrolltop {
-    filter: invert(93%) sepia(2%) saturate(180%) hue-rotate(22deg) brightness(85%) contrast(86%);
   }
 
   /* Text */
