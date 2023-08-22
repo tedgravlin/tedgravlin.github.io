@@ -107,6 +107,13 @@ div.card {
   box-sizing: border-box;
 }
 
+div.projectcard {
+  padding: 0em 0em 2.5em 0em;
+  border: 2px hidden black;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
 div.widecard {
   padding: 2.5em 1em 2.5em 1em;
   border: 2px hidden black;
@@ -157,6 +164,12 @@ div.cardsection {
   }
 
   div.card {
+    margin: 0px 1em 0px 1em;
+    width: 90vw;
+    height: auto;
+  }
+
+  div.projectcard {
     margin: 0px 1em 0px 1em;
     width: 90vw;
     height: auto;
@@ -372,6 +385,15 @@ a.button {
   display: inline-block
 }
 
+a.noshow {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a:hover.noshow {
+  opacity: 1.0;
+}
+
 /* ---------- Images ---------- */
 img.scrolltop {
   width: 45px;
@@ -381,6 +403,13 @@ img.scrolltop {
 
 img.screenshots {
   border-radius: 16px;
+}
+
+img.cardheader {
+  width: 100%;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 div.gallery {
@@ -436,6 +465,10 @@ div.gallery {
 
   /* Cards */
   div.card {
+    background-color: var(--lightmain);
+  }
+
+  div.projectcard {
     background-color: var(--lightmain);
   }
 
@@ -546,6 +579,10 @@ div.gallery {
 
   /* Cards */
   div.card {
+    background-color: #222;
+  }
+
+  div.projectcard {
     background-color: #222;
   }
 
