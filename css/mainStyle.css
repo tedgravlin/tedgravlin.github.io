@@ -132,8 +132,7 @@ div.cardsection {
 @media (min-width: 500px) {
   div.twocolumncardholder {
     grid-template-columns: 1fr 1fr;
-    min-width: 0%;
-    max-width: 100%;
+    max-width: 70vw;
     width: 85vw;
   }
 
