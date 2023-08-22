@@ -185,6 +185,14 @@ h1.headertitle {
   margin-top: 0.3em;
 }
 
+h1.divider {
+  background-color: var(--lightmain);
+  border-radius: 32px;
+  padding: 1em;
+  margin: 1em auto 1em auto;
+  width: 65vw;
+}
+
 p.cardtext {
   text-align: left;
   line-height: 1.5em;
@@ -238,6 +246,17 @@ input[type=button] {
 
 input[type=button].uniformsize {
   width: 8em;
+}
+
+input[type=button].nav {
+  display: none;
+  margin: 0em auto 0em auto;
+}
+
+@media (max-width: 500px) {
+  input[type=button].nav {
+    display: block;
+  }
 }
 
 /* ---------- Dividers ---------- */
