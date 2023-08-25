@@ -437,4 +437,8 @@ img.cardheader {
     hr.cardheader {
       border: 1px solid lightgray;
     }
+
+    h1.divider {
+      background-color: #222
+    }
   }
