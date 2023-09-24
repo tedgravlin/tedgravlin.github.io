@@ -83,12 +83,11 @@ div.onecolumncardholder {
 }
 
 div.threecolumncardholder {
+  justify-items: center;
   margin-top: 10px;
   display: inline-grid;
-  grid-column-gap: 15px;
+  grid-column-gap: 1em;
   grid-row-gap: 15px;
-  grid-template-columns: auto;
-  width: auto;
 }
 
 div.card {
@@ -98,7 +97,13 @@ div.card {
   box-sizing: border-box;
 }
 
+div.projectcard h3, div.projectcard p {
+  padding: 0 2em 0 2em;
+}
+
 div.projectcard {
+  width: 250px;
+  height: 250px;
   padding: 0em 0em 2.5em 0em;
   border: 2px hidden black;
   border-radius: 16px;
@@ -125,7 +130,7 @@ div.cardsection {
     grid-template-columns: 1fr 1fr 1fr;
     min-width: 0%;
     max-width: 100%;
-    width: 85vw;
+    width: min-content;
   }
 
   div.card {
@@ -141,17 +146,26 @@ div.cardsection {
     min-width: 95%;
     max-width: 100%;
   }
+  div.threecolumncardholder {
+    grid-template-columns: 100%;
+    min-width: 95%;
+    max-width: 100%;
+  }
 
   div.card {
     margin: 0px 1em 0px 1em;
     width: 90vw;
-    height: auto;
   }
 
   div.projectcard {
     margin: 0px 1em 0px 1em;
     width: 90vw;
-    height: auto;
+    height: fit-content;
+    padding-bottom: 1em;
+  }
+
+  img.cardheader {
+    width: 90vw !important;
   }
 }
 
@@ -298,7 +312,7 @@ a:hover.noshow {
 
 /* ---------- Images ---------- */
 img.cardheader {
-  width: 100%;
+  width: 250px;
   border-radius: 16px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
