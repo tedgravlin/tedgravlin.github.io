@@ -47,6 +47,17 @@ header {
   display: grid;
   grid-template-columns: 25% 75%;
   align-items: center;
+  animation-name: enterFromTop;
+  animation-duration: 1.5s;
+}
+
+@keyframes enterFromTop {
+  0% {
+    translate: 0px -300px;
+  }
+  100% {
+    translate: 0px;
+  }
 }
 
 header img {
@@ -62,3 +73,4 @@ header h1 {
 .header-name {
   color: var(--text-color);
 }
+
