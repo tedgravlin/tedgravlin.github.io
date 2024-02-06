@@ -1,0 +1,64 @@
+:root {
+  font-family: Arial;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  color: white;
+  --body-bg-color: #0f0f0f;
+  --card-bg-color: #222;
+  --text-color: rgb(68, 141, 68);
+}
+
+@font-face {
+  src: url("../assets/fonts/ProductSans-Regular.ttf");
+  font-family: "productsans";
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("../assets/fonts/Roboto-Medium.ttf");
+  font-family: "Roboto-Medium";
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* ----- Body ----- */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--body-bg-color);
+  background-image: radial-gradient(var(--text-color), 1px, transparent 1px);
+  background-size: 5vh 5vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1;
+}
+
+/* ----- Header ----- */
+header {
+  font-family: productsans;
+  width: 60vw;
+  margin: 5em auto 1em auto;
+  padding: 2em;
+  border-radius: 100px;
+  background-color: var(--card-bg-color);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 350%;
+}
+
+.header-name {
+  color: var(--text-color);
+}

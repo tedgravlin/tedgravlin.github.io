@@ -5,16 +5,9 @@
 
 <head>
     <!-- Import CSS -->
-    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Scale page to display width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Header -->
-    <div class="header">
-        <a class="noshow" target="_top" href="./index.html">
-            <img class="headerlogo" src="./assets/images/picture-of-me.jpg" alt="" style="width:100px; height:100px;">
-        </a>
-        <h1 class="headertitle">Ted Gravlin</h1>
-    </div>
     <!-- Page title and favicons -->
     <title> Ted Gravlin </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -22,65 +15,18 @@
 </head>
 
 <body>
-    <!-- Mobile nav buttons -->
-    <a href="#projects">
-        <input class="nav" type="button" value="Projects">
-    </a>
-    <!-- Main Cards -->
-    <div class="twocolumncardholder">
-        <div class="card">
-            <img class="cardicon" src="./assets/images/webglobe-emoji.svg">
-            <br>
-            <h3> Quick Links </h3>
-            <a class="button" href="https://www.linkedin.com/in/theodore-gravlin/">
-                <input class="uniformsize" type="button" value="LinkedIn">
-            </a>
-            <a class="button" href="https://github.com/tedgravlin">
-                <input class="uniformsize" type="button" value="GitHub">
-            </a>
-            <br>
-            <a class="button" href="mailto:theodoregravlin@pm.me">
-                <input class="uniformsize" type="button" value="Email">
-            </a>
+    <!-- Main -->
+    <main>
+        <!-- Header -->
+        <header>
+            <img src="/assets/images/picture-of-me.jpg">
+            <h1>Hi, I'm <span class="header-name">Ted Gravlin</span></h1>
+        </header>
+        <!-- Header -->
+        <div class="header">
+
         </div>
-        <div class="card">
-            <img class="cardicon" src="./assets/images/man-at-computer-emoji.svg">
-            <br>
-            <h3> About Me </h3>
-            <p> Hi there! I'm Ted Gravlin.  I love to develop things that make people's lives easier and more fun!</p>
-            <p>I am currently a Computer Science student at Eastern Michigan University.</p>
-        </div>
-    </div>
-    <!-- Projects -->
-    <h1 class="divider" id="projects">Projects</h1>
-    <div class="threecolumncardholder">
-        <a class="noshow" href="https://tedgravlin.github.io/qr-crypt/" target="_blank">
-            <div class="projectcard">
-                <img class="cardheader" src="./assets/images/QR-Crypt.png">
-                <h3>QR-Crypt</h3>
-                <p>A password-protected QR Code generator</p>
-            </div>
-        </a>
-        <a class="noshow" href="https://tedgravlin.github.io/signal-update-info/" target="_blank">
-            <div class="projectcard">
-                <img class="cardheader" src="./assets/images/signal-update-info.png">
-                <h3>Signal Update Info</h3>
-                <p>Signal news and updates</p>
-            </div>
-        </a>
-        <a class="noshow" href="https://whatshouldieat.app/" target="_blank">
-            <div class="projectcard">
-                <img class="cardheader" src="./assets/images/What-Should-I-Eat.png">
-                <h3>What Should I Eat?</h3>
-                <p>Can't decide what to eat? We'll pick for you.</p>
-            </div>
-        </a>
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-        <a href="https://github.com/tedgravlin" style="font-weight: normal;"> Made with ❤️ by
-            Ted Gravlin </a>
-    </div>
+    </main>
 </body>
 
 </html>
