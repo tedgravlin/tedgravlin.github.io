@@ -3,6 +3,7 @@
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
   color: white;
+  --page-width: 60vw;
   --body-bg-color: #0f0f0f;
   --card-bg-color: #222;
   --text-color: rgb(68, 141, 68);
@@ -33,14 +34,17 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 100vw;
 }
 
 /* ----- Header ----- */
 header {
   font-family: productsans;
-  width: 60vw;
+  width: var(--page-width);
   margin: 5em auto 1em auto;
+}
+
+div.header-card {
   padding: 2em;
   border-radius: 100px;
   background-color: var(--card-bg-color);
@@ -74,3 +78,47 @@ header h1 {
   color: var(--text-color);
 }
 
+/* ----- About/Project Container ----- */
+div.main-content {
+  width: var(--page-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  animation-name: enterFromBottom;
+  animation-duration: 1.5s;
+}
+
+div.card {
+  height: 50vh;
+  border-radius: 32px;
+  padding: 2em;
+  background-color: var(--card-bg-color);
+}
+
+.left {
+  animation-name: enterFromLeft;
+  animation-duration: 1.5s;
+}
+
+.right {
+  animation-name: enterFromBottom;
+  animation-duration: 1.5s;
+}
+
+@keyframes enterFromLeft {
+  0% {
+    translate: -300px 0px 1px;
+  }
+  100% {
+    translate: 0px 0px 0px;
+  }
+}
+
+@keyframes enterFromBottom {
+  0% {
+    translate: 0px 300px;
+  }
+  100% {
+    translate: 0px;
+  }
+}
