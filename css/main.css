@@ -224,3 +224,14 @@ div.project-info {
   padding: 1em;
   font-size: 0.9vw;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+div.card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
