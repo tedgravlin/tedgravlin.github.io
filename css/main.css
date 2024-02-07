@@ -148,7 +148,6 @@ div.about-button-container {
 }
 
 a.button-background {
-  /* background-color: var(--accent-color); */
   background-color: var(--body-bg-color);
   color: var(--accent-color);
   border-radius: 24vw;
@@ -243,4 +242,58 @@ div.card::-webkit-scrollbar, body::-webkit-scrollbar {
 div.card {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+/* Mobile layout */
+@media (max-width: 500px) {
+  :root {
+    --page-width: 90vw;
+  }
+  body {
+    display: block;
+    background-size: 4vh 4vh;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  div.header-card {
+    column-gap: 1em;
+    padding: 1em;
+    animation-duration: 1s;
+  }
+  header {
+    margin-top: 2em;
+  }
+  header img {
+    width: 15vw;
+  }
+  header h1 {
+    font-size: 6vw;
+  }
+  div.main-content {
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    animation-duration: 1s;
+  }
+  div.card {
+    height: fit-content;
+  }
+  .left {
+    animation-name: enterFromBottom;
+    animation-duration: 1s;
+  }
+  .right {
+    margin-left: 0;
+    margin-bottom: 2em;
+    animation-duration: 1.25s;
+  }
+  div.project-card-container {
+    grid-template-columns: 1fr;
+  }
+  div.button-contents {
+    font-size: 3vw;
+  }
+  div.button-contents img {
+    width: 5vw;
+  }
 }
