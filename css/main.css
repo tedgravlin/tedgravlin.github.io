@@ -6,7 +6,8 @@
   --page-width: 60vw;
   --body-bg-color: #0f0f0f;
   --card-bg-color: #222;
-  --text-color: rgb(68, 141, 68);
+  --accent-color: #448D44;
+  --accent-filter: invert(48%) sepia(69%) saturate(397%) hue-rotate(71deg) brightness(84%) contrast(82%);
 }
 
 @font-face {
@@ -28,7 +29,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--body-bg-color);
-  background-image: radial-gradient(var(--text-color), 1px, transparent 1px);
+  background-image: radial-gradient(var(--accent-color), 1px, transparent 1px);
   background-size: 5vh 5vh;
 }
 
@@ -51,7 +52,7 @@ div.header-card {
   display: grid;
   grid-template-columns: 25% 75%;
   align-items: center;
-  animation-name: enterFromTop;
+  /* animation-name: enterFromTop; */
   animation-duration: 1.5s;
 }
 
@@ -65,17 +66,17 @@ div.header-card {
 }
 
 header img {
-  width: 100px;
+  width: 7.5vw;
   border-radius: 100%;
 }
 
 header h1 {
   margin: 0;
-  font-size: 350%;
+  font-size: 3.5vw;
 }
 
 .header-name {
-  color: var(--text-color);
+  color: var(--accent-color);
 }
 
 /* ----- About/Project Container ----- */
@@ -84,7 +85,7 @@ div.main-content {
   margin: auto;
   display: grid;
   grid-template-columns: 35% 65%;
-  animation-name: enterFromBottom;
+  /* animation-name: enterFromBottom; */
   animation-duration: 1.5s;
 }
 
@@ -93,15 +94,21 @@ div.card {
   border-radius: 32px;
   padding: 2em;
   background-color: var(--card-bg-color);
+  overflow: scroll;
+}
+
+div.card h3 {
+  margin-top: 0;
 }
 
 .left {
-  animation-name: enterFromLeft;
+  /* animation-name: enterFromLeft; */
   animation-duration: 1.5s;
 }
 
 .right {
-  animation-name: enterFromBottom;
+  margin-left: 1em;
+  /* animation-name: enterFromBottom; */
   animation-duration: 1.5s;
 }
 
@@ -121,4 +128,68 @@ div.card {
   100% {
     translate: 0px;
   }
+}
+
+/* ----- About Card ----- */
+div.about-button-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  column-gap: 1vh;
+  row-gap: 1vh;
+}
+
+a.button-background {
+  /* background-color: var(--accent-color); */
+  background-color: var(--body-bg-color);
+  color: var(--accent-color);
+  border-radius: 24vw;
+  justify-items: center;
+  text-decoration: none;
+}
+
+div.button-contents {
+  width: min-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.25fr min-content;
+  align-items: center;
+  column-gap: 0.25em;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+div.button-contents img {
+  justify-self: right;
+  filter: var(--accent-filter);
+  width: 1.5vw;
+}
+
+/* ----- Projects Card ----- */
+div.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+a.project-card {
+  width: 100%;
+  background-color: var(--body-bg-color);
+  border-radius: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+a.project-card img {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  width: 100%;
+}
+a.project-card h4 {
+  margin-top: 0.5em;
+  font-size: 80%;
+}
+
+div.project-description {
+  padding: 0em 1em 0em 1em;
 }
