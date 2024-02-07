@@ -2,12 +2,13 @@
   font-family: Arial;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
-  color: white;
   --page-width: 65vw;
   --body-bg-color: #0f0f0f;
   --card-bg-color: #222;
   --accent-color: #448D44;
   --accent-filter: invert(48%) sepia(69%) saturate(397%) hue-rotate(71deg) brightness(84%) contrast(82%);
+  --text-color: rgb(212, 212, 212);
+  color: var(--text-color);
 }
 
 @font-face {
@@ -26,6 +27,7 @@
 
 /* ----- Body ----- */
 body {
+  overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +49,7 @@ header {
   font-family: productsans;
   width: var(--page-width);
   margin: auto auto 1em auto;
+  color: white;
 }
 
 div.header-card {
@@ -56,7 +59,7 @@ div.header-card {
   display: grid;
   grid-template-columns: 25% 75%;
   align-items: center;
-  /* animation-name: enterFromTop; */
+  animation-name: enterFromTop;
   animation-duration: 1.5s;
 }
 
@@ -89,7 +92,7 @@ div.main-content {
   margin: auto;
   display: grid;
   grid-template-columns: 35% 65%;
-  /* animation-name: enterFromBottom; */
+  animation-name: enterFromBottom;
   animation-duration: 1.5s;
 }
 
@@ -103,16 +106,18 @@ div.card {
 
 div.card h3 {
   margin-top: 0;
+  font-size: 2.25vh;
+  color: var(--accent-color);
 }
 
 .left {
-  /* animation-name: enterFromLeft; */
+  animation-name: enterFromLeft;
   animation-duration: 1.5s;
 }
 
 .right {
   margin-left: 1em;
-  /* animation-name: enterFromBottom; */
+  animation-name: enterFromBottom;
   animation-duration: 1.5s;
 }
 
@@ -166,6 +171,10 @@ div.button-contents img {
   justify-self: right;
   filter: var(--accent-filter);
   width: 1.5vw;
+}
+
+p.about-text {
+  font-size: 2.25vh;
 }
 
 /* ----- Projects Card ----- */
@@ -226,7 +235,7 @@ div.project-info {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-div.card::-webkit-scrollbar {
+div.card::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
 
