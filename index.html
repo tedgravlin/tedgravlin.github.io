@@ -5,82 +5,112 @@
 
 <head>
     <!-- Import CSS -->
-    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Scale page to display width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Header -->
-    <div class="header">
-        <a class="noshow" target="_top" href="./index.html">
-            <img class="headerlogo" src="./assets/images/picture-of-me.jpg" alt="" style="width:100px; height:100px;">
-        </a>
-        <h1 class="headertitle">Ted Gravlin</h1>
-    </div>
     <!-- Page title and favicons -->
     <title> Ted Gravlin </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <!-- Meta -->
+    <meta name="title" property="og:title" content="Ted Gravlin" />
+    <meta name="description" property="og:description"
+        content="Hi, I'm Ted Gravlin. Software developer with an interest in developing products that make people's lives easier and more fun." />
+    <meta name="keywords"
+        content="ted gravlin, gravlin, ted gravlin website, theodore gravlin, theodore gravlin website" />
+    <meta name="image" property="og:image" content="https://tedgravlin.tech/assets/images/ogimage.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tedgravlin.tech/" />
 </head>
 
 <body>
-    <!-- Mobile nav buttons -->
-    <a href="#projects">
-        <input class="nav" type="button" value="Projects">
-    </a>
-    <!-- Main Cards -->
-    <div class="twocolumncardholder">
-        <div class="card">
-            <img class="cardicon" src="./assets/images/webglobe-emoji.svg">
-            <br>
-            <h3> Quick Links </h3>
-            <a class="button" href="https://www.linkedin.com/in/theodore-gravlin/">
-                <input class="uniformsize" type="button" value="LinkedIn">
-            </a>
-            <a class="button" href="https://github.com/tedgravlin">
-                <input class="uniformsize" type="button" value="GitHub">
-            </a>
-            <br>
-            <a class="button" href="mailto:theodoregravlin@pm.me">
-                <input class="uniformsize" type="button" value="Email">
-            </a>
+    <!-- Main -->
+    <main>
+        <!-- Header -->
+        <header>
+            <div class="header-card">
+                <img src="/assets/images/picture-of-me.jpg">
+                <h1>Hi, I'm <span class="header-name">Ted Gravlin</span></h1>
+            </div>
+        </header>
+        <!-- About/Projects Container -->
+        <div class="main-content">
+            <div class="card left">
+                <h3>About Me</h3>
+                <p class="about-text">Software developer with an interest in developing products that make people's lives easier and more
+                    fun.
+                    Bachelor's of Science in Computer Science from Eastern Michigan University.</p>
+                <div class="about-button-container">
+                    <a target="_blank" href="https://github.com/tedgravlin/" class="button-background">
+                        <div class="button-contents">
+                            <img src="/assets/images/github-icon.svg">
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://linkedin.com/in/theodore-gravlin/" class="button-background">
+                        <div class="button-contents">
+                            <img src="/assets/images/linkedin-icon.svg">
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="mailto:theodoregravlin@pm.me" class="button-background">
+                        <div class="button-contents">
+                            <img src="/assets/images/mail-icon.svg">
+                            <p>Email</p>
+                        </div>
+                    </a>
+                    <a target="_blank" rel="me" href="https://mastodon.world/@tedgravlin" class="button-background">
+                        <div class="button-contents">
+                            <img src="/assets/images/mastodon-icon.svg">
+                            <p>Mastodon</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card right">
+                <h3>Recent Projects</h3>
+                <div class="project-card-container">
+                    <a target="_blank" href="https://signalupdateinfo.com/" class="project-card">
+                        <img src="/assets/images/signal-update-info.png">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>Signal Update Info</h4>
+                                <p>News and updates site for the Signal Messenger community.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://tedgravlin.tech/qr-crypt/" class="project-card">
+                        <img src="/assets/images/QR-Crypt.png">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>QR-Crypt</h4>
+                                <p>Password-protected QR code generator.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/COSC481W-2023Fall/planned-out" class="project-card">
+                        <img src="/assets/images/planned-out.png">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>Planned-Out</h4>
+                                <p>A simple, easy-to-use planner web app with social features.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://whatshouldieat.app/" class="project-card">
+                        <img src="/assets/images/What-Should-I-Eat.png">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>What Should I Eat</h4>
+                                <p>A simple website that chooses a random cuisine and helps you find places to eat
+                                    nearby. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <img class="cardicon" src="./assets/images/man-at-computer-emoji.svg">
-            <br>
-            <h3> About Me </h3>
-            <p> Hi there! I'm Ted Gravlin.  I love to develop things that make people's lives easier and more fun!</p>
-            <p>I am currently a Computer Science student at Eastern Michigan University.</p>
-        </div>
-    </div>
-    <!-- Projects -->
-    <h1 class="divider" id="projects">Projects</h1>
-    <div class="threecolumncardholder">
-        <a class="noshow" href="https://tedgravlin.github.io/qr-crypt/" target="_blank">
-            <div class="projectcard">
-                <img class="cardheader" src="./assets/images/QR-Crypt.png">
-                <h3>QR-Crypt</h3>
-                <p>A password-protected QR Code generator</p>
-            </div>
-        </a>
-        <a class="noshow" href="https://tedgravlin.github.io/signal-update-info/" target="_blank">
-            <div class="projectcard">
-                <img class="cardheader" src="./assets/images/signal-update-info.png">
-                <h3>Signal Update Info</h3>
-                <p>Signal news and updates</p>
-            </div>
-        </a>
-        <a class="noshow" href="https://whatshouldieat.app/" target="_blank">
-            <div class="projectcard">
-                <img class="cardheader" src="./assets/images/What-Should-I-Eat.png">
-                <h3>What Should I Eat?</h3>
-                <p>Can't decide what to eat? We'll pick for you.</p>
-            </div>
-        </a>
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-        <a href="https://github.com/tedgravlin" style="font-weight: normal;"> Made with ❤️ by
-            Ted Gravlin </a>
-    </div>
+    </main>
 </body>
 
 </html>
