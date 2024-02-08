@@ -332,3 +332,72 @@ div.card {
     width: 5vw;
   }
 }
+
+/* Portrait tablet layout */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  :root {
+    --page-width: 80vw;
+  }
+
+  body {
+    display: block;
+    background-size: 4vh 4vh;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  div.header-card {
+    column-gap: 1em;
+    padding: 1em;
+    will-change: translate;
+    animation-duration: 1s;
+  }
+
+  header {
+    margin-top: 4em;
+  }
+
+  header img {
+    width: 15vw;
+  }
+
+  header h1 {
+    font-size: 6vw;
+  }
+
+  div.main-content {
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    will-change: translate;
+    animation-duration: 1s;
+  }
+
+  div.card {
+    height: fit-content;
+  }
+
+  .left {
+    animation-name: enterFromBottom;
+    animation-duration: 1s;
+  }
+
+  .right {
+    margin-left: 0;
+    margin-bottom: 4em;
+    animation-duration: 1.25s;
+  }
+
+  div.project-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  div.button-contents {
+    font-size: 3vw;
+  }
+
+  div.button-contents img {
+    width: 5vw;
+  }
+}
