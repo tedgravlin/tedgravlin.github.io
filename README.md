@@ -1,4 +1,3 @@
-# tedgravlin.github.io
+# tedgravlin.tech
 My personal website
 
-Not final, still being worked on.
