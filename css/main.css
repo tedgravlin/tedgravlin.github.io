@@ -325,6 +325,60 @@ div.project-overlay {
   border: 2px solid rgba(255, 255, 255, 0.125);
 }
 
+/* ----- Contact Card ----- */
+div.contact-container {
+  grid-template-columns: 1fr;
+}
+
+.card.contact {
+  height: fit-content;
+  margin-bottom: 0em;
+}
+
+.card.contact .about-button-container .button-contents {
+  column-gap: 0.5em;
+}
+
+@media (max-width: 700px) {
+  .card.contact .about-button-container .button-contents p {
+    font-size: calc(14px + 0.390625vw);
+  }
+  
+  .card.contact .about-button-container .button-contents img {
+    width: 5.5vw;
+  }
+}
+
+.contact-container.main-content {
+  margin-bottom: 0em;
+}
+
+.card.contact .about-button-container {
+  grid-template-columns: 1fr;
+}
+
+.card.contact .about-button-container a {
+  padding: 1em;
+}
+
+.card.contact .about-button-container a:nth-child(1) {
+    animation: ease-out enterFromBottom 1s;
+}
+
+.card.contact .about-button-container a:nth-child(2) {
+    animation: ease-out enterFromBottom 1.25s;
+}
+
+.card.contact .about-button-container a:nth-child(3) {
+    animation: ease-out enterFromBottom 1.50s;
+}
+
+.card.contact .about-button-container a:nth-child(4) {
+  animation: ease-out enterFromBottom 1.75s;
+}
+
+
+
 /* Only show hover effects on devices with cursors (not mobile) */
 @media (hover: hover) and (pointer: fine) {
   a.project-card:hover div.project-overlay {
